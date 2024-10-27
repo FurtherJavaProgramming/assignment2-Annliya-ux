@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.ManageBooksController" spacing="10" alignment="CENTER" prefHeight="400.0" prefWidth="600.0">
+    <TableView fx:id="booksTable" prefHeight="200.0">
+        <columns>
+            <TableColumn fx:id="titleColumn" text="Title" prefWidth="200.0"/>
+            <TableColumn fx:id="authorsColumn" text="Authors" prefWidth="150.0"/>
+            <TableColumn fx:id="priceColumn" text="Price (AUD)" prefWidth="100.0"/>
+            <TableColumn fx:id="physicalCopiesColumn" text="Physical Copies" prefWidth="100.0"/>
+            <TableColumn fx:id="soldCopiesColumn" text="Sold Copies" prefWidth="100.0"/>
+        </columns>
+    </TableView>
+
+    <TextField fx:id="titleField" promptText="Title"/>
+    <TextField fx:id="authorField" promptText="Authors"/>
+    <TextField fx:id="priceField" promptText="Price (AUD)"/>
+    <TextField fx:id="physicalCopiesField" promptText="Physical Copies"/>
+    <TextField fx:id="soldCopiesField" promptText="Sold Copies"/>
+
+    <Button fx:id="addBookButton" text="Add Book"/>
+    <Button fx:id="editBookButton" text="Edit Book"/>
+    <Button fx:id="deleteBookButton" text="Delete Book"/>
+</VBox>
